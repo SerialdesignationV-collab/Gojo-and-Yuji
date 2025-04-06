@@ -1,0 +1,57 @@
+local function Ojo()
+if getgenv().Gojo then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SerialdesignationV-collab/Gojo-with-no-speech-when-executed/refs/heads/main/I'm%20pregnant.txt"))()
+else
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SerialdesignationV-collab/Script-Yuji-Itadori-Script/refs/heads/main/I.Got.Raped.txt"))()
+end
+end
+if getgenv().PlayerName then
+    local player = game.Players:FindFirstChild(getgenv().PlayerName)
+    
+    if player then
+        local humanoid = player.Character:FindFirstChild("Humanoid")
+        if humanoid then
+            for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+                if track.AnimationId == "rbxassetid://18435303746" then
+                    local billboardGui = Instance.new("BillboardGui")
+                    billboardGui.Adornee = player.Character:WaitForChild("Head")
+                    billboardGui.Size = UDim2.new(0, 200, 0, 50)
+                    billboardGui.StudsOffset = Vector3.new(0, 3, 0)
+                    billboardGui.Parent = player.Character
+
+                    local textLabel = Instance.new("TextLabel")
+                    textLabel.Text = "Yuji User"
+                    textLabel.Size = UDim2.new(1, 0, 1, 0)
+                    textLabel.TextScaled = true
+                    textLabel.BackgroundTransparency = 1
+                    textLabel.Parent = billboardGui
+                    Ojo()
+                end
+            end
+        end
+    end
+    if player then
+        local humanoid = player.Character:FindFirstChild("Humanoid")
+        if humanoid then
+            for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+                if track.AnimationId == "rbxassetid://18897538537" then
+                    local billboardGui = Instance.new("BillboardGui")
+                    billboardGui.Adornee = player.Character:WaitForChild("Head")
+                    billboardGui.Size = UDim2.new(0, 200, 0, 50)
+                    billboardGui.StudsOffset = Vector3.new(0, 3, 0)
+                    billboardGui.Parent = player.Character
+
+                    local textLabel = Instance.new("TextLabel")
+                    textLabel.Text = "Gojo User"
+                    textLabel.Size = UDim2.new(1, 0, 1, 0)
+                    textLabel.TextScaled = true
+                    textLabel.BackgroundTransparency = 1
+                    textLabel.Parent = billboardGui
+                    Ojo()
+                end
+            end
+        end
+    end
+else
+    game.Players.LocalPlayer:Kick("INVALID PLAYER PLEASE TRY AGAIN.")
+end
