@@ -24,7 +24,6 @@ if getgenv().PlayerName then
                     Ojo()
                 end
             end
-         end
     if player then
                     local billboardGui = Instance.new("BillboardGui")
                     billboardGui.Adornee = player.Character:WaitForChild("Head")
@@ -41,7 +40,6 @@ if getgenv().PlayerName then
                     Ojo()
                 end
             end
-        end
 else
     game.Players.LocalPlayer:Kick("INVALID PLAYER PLEASE TRY AGAIN.")
 end
